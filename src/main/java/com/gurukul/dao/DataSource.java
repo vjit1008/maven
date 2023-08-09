@@ -21,7 +21,7 @@ public class DataSource {
     public Connection getConnection() {
 	try {
 //	    System.out.println("connecting to mySQL database");
-	    conn = DriverManager.getConnection("jdbc:mysql://localhost:3300/", "root", "Rajshree@123#");
+	    conn = DriverManager.getConnection("jdbc:mysql://localhost:3300/student", "root", "Vishvajit108");
 	} catch (SQLException ex) {
 	    System.out.println("SQLException: " + ex.getMessage());
 	    System.out.println("SQLState: " + ex.getSQLState());

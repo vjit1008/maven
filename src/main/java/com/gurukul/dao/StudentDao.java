@@ -8,7 +8,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.gurukul.exception.*;
+import com.gurukul.exception.EmailException;
+import com.gurukul.exception.IdNotFoundException;
 import com.gurukul.model.Student;
 public class StudentDao {
     Connection conn = null;
@@ -30,7 +31,6 @@ public class StudentDao {
 		    obj.setEmail(rs.getString("email"));
 		    obj.setCourse(rs.getString("course"));
 		    obj.setAge(rs.getInt("age"));
-//		    System.out.println(obj.getUname() + ", " + obj.getPswd());
 		    StudentList.add(obj);
 		}
 	    }
